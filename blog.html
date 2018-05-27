@@ -1,0 +1,1086 @@
+<!DOCTYPE html>
+<html lang="" xmlns:fb="http://ogp.me/ns/fb#">
+	<head>
+		<title>M+ Architecture Blog</title><meta http-equiv='cache-control' content='no-cache' />
+<meta property="description" content="M+ Architecture and Marco De Bortoli blog" />
+
+
+<meta name="keywords" content="M+ Architecture, Mplusarchitecture, Blog, Marco De Bortoli" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    
+		<meta name="google-site-verification" content="5wdP5rINZMSLEOj8446y9lsZQTX1ZVwI0OvjpbP4quo" />
+<!-- Hotjar Tracking Code for http://www.mplusarchitecture.com -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:176423,hjsv:5};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-75461678-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+		<link id="wsite-base-style" rel="stylesheet" type="text/css" href="http://cdn2.editmysite.com/css/sites.css?buildTime=1234" />
+<link rel="stylesheet" type="text/css" href="http://cdn2.editmysite.com/css/old/fancybox.css?1234" />
+<link rel="stylesheet" type="text/css" href="files/main_style.css?1524853328" title="wsite-theme-css" />
+<link href='http://fonts.googleapis.com/css?family=Quattrocento:400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css' />
+
+<style type='text/css'>
+.wsite-elements.wsite-not-footer:not(.wsite-header-elements) div.paragraph, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) p, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-block .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-description, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .wsite-form-field label, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .wsite-form-field label, #wsite-content div.paragraph, #wsite-content p, #wsite-content .product-block .product-title, #wsite-content .product-description, #wsite-content .wsite-form-field label, #wsite-content .wsite-form-field label, .blog-sidebar div.paragraph, .blog-sidebar p, .blog-sidebar .wsite-form-field label, .blog-sidebar .wsite-form-field label {}
+#wsite-content div.paragraph, #wsite-content p, #wsite-content .product-block .product-title, #wsite-content .product-description, #wsite-content .wsite-form-field label, #wsite-content .wsite-form-field label, .blog-sidebar div.paragraph, .blog-sidebar p, .blog-sidebar .wsite-form-field label, .blog-sidebar .wsite-form-field label {}
+.wsite-elements.wsite-footer div.paragraph, .wsite-elements.wsite-footer p, .wsite-elements.wsite-footer .product-block .product-title, .wsite-elements.wsite-footer .product-description, .wsite-elements.wsite-footer .wsite-form-field label, .wsite-elements.wsite-footer .wsite-form-field label{}
+.wsite-elements.wsite-not-footer:not(.wsite-header-elements) h2, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-long .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-large .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-small .product-title, #wsite-content h2, #wsite-content .product-long .product-title, #wsite-content .product-large .product-title, #wsite-content .product-small .product-title, .blog-sidebar h2 {}
+#wsite-content h2, #wsite-content .product-long .product-title, #wsite-content .product-large .product-title, #wsite-content .product-small .product-title, .blog-sidebar h2 {}
+.wsite-elements.wsite-footer h2, .wsite-elements.wsite-footer .product-long .product-title, .wsite-elements.wsite-footer .product-large .product-title, .wsite-elements.wsite-footer .product-small .product-title{}
+#wsite-title {}
+.wsite-menu-default a {}
+.wsite-menu a {}
+.wsite-image div, .wsite-caption {}
+.galleryCaptionInnerText {}
+.fancybox-title {}
+.wslide-caption-text {}
+.wsite-phone {}
+.wsite-headline,.wsite-header-section .wsite-content-title {}
+.wsite-headline-paragraph,.wsite-header-section .paragraph {}
+.wsite-button-inner {}
+.wsite-not-footer blockquote {}
+.wsite-footer blockquote {}
+.blog-header h2 a {}
+#wsite-content h2.wsite-product-title {}
+.wsite-product .wsite-product-price a {}
+@media screen and (min-width: 767px) {.wsite-elements.wsite-not-footer:not(.wsite-header-elements) div.paragraph, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) p, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-block .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-description, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .wsite-form-field label, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .wsite-form-field label, #wsite-content div.paragraph, #wsite-content p, #wsite-content .product-block .product-title, #wsite-content .product-description, #wsite-content .wsite-form-field label, #wsite-content .wsite-form-field label, .blog-sidebar div.paragraph, .blog-sidebar p, .blog-sidebar .wsite-form-field label, .blog-sidebar .wsite-form-field label {font-size:14px !important;line-height:18px !important;}
+#wsite-content div.paragraph, #wsite-content p, #wsite-content .product-block .product-title, #wsite-content .product-description, #wsite-content .wsite-form-field label, #wsite-content .wsite-form-field label, .blog-sidebar div.paragraph, .blog-sidebar p, .blog-sidebar .wsite-form-field label, .blog-sidebar .wsite-form-field label {}
+.wsite-elements.wsite-footer div.paragraph, .wsite-elements.wsite-footer p, .wsite-elements.wsite-footer .product-block .product-title, .wsite-elements.wsite-footer .product-description, .wsite-elements.wsite-footer .wsite-form-field label, .wsite-elements.wsite-footer .wsite-form-field label{}
+.wsite-elements.wsite-not-footer:not(.wsite-header-elements) h2, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-long .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-large .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-small .product-title, #wsite-content h2, #wsite-content .product-long .product-title, #wsite-content .product-large .product-title, #wsite-content .product-small .product-title, .blog-sidebar h2 {font-size:18px !important;line-height:20px !important;}
+#wsite-content h2, #wsite-content .product-long .product-title, #wsite-content .product-large .product-title, #wsite-content .product-small .product-title, .blog-sidebar h2 {}
+.wsite-elements.wsite-footer h2, .wsite-elements.wsite-footer .product-long .product-title, .wsite-elements.wsite-footer .product-large .product-title, .wsite-elements.wsite-footer .product-small .product-title{}
+#wsite-title {}
+.wsite-menu-default a {}
+.wsite-menu a {}
+.wsite-image div, .wsite-caption {}
+.galleryCaptionInnerText {}
+.fancybox-title {}
+.wslide-caption-text {}
+.wsite-phone {}
+.wsite-headline,.wsite-header-section .wsite-content-title {}
+.wsite-headline-paragraph,.wsite-header-section .paragraph {}
+.wsite-button-inner {}
+.wsite-not-footer blockquote {}
+.wsite-footer blockquote {}
+.blog-header h2 a {}
+#wsite-content h2.wsite-product-title {}
+.wsite-product .wsite-product-price a {}
+}</style>
+<link rel='stylesheet' type='text/css' href='http://cdn2.editmysite.com/css/old/slideshow/slideshow.css?1234' />
+
+		<script>
+var STATIC_BASE = '//cdn1.editmysite.com/';
+var ASSETS_BASE = '//cdn2.editmysite.com/';
+var STYLE_PREFIX = 'wsite';
+</script>
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js'></script>
+
+<script type="text/javascript" src="http://cdn2.editmysite.com/js/lang/en/stl.js?buildTime=1234&"></script>
+<script src="http://cdn2.editmysite.com/js/site/main.js?buildTime=1234"></script><script type='text/javascript' src='http://cdn2.editmysite.com/js/old/slideshow-jq.js?buildTime=1234'></script>
+<script type="text/javascript">_W.configDomain = "www.weebly.com";</script><script>_W.relinquish && _W.relinquish()</script>
+<script type="text/javascript" src="http://cdn2.editmysite.com/js/lang/en/stl.js?buildTime=1234&"></script><script> _W.themePlugins = [];</script><script type="text/javascript"> _W.recaptchaUrl = "https://www.google.com/recaptcha/api.js"; </script><script type="text/javascript"> window._W = window._W || {}; _W.showV2Footer = 0; </script><script type="text/javascript"><!--
+	var IS_ARCHIVE = 1;
+	
+	function initFlyouts(){
+		initPublishedFlyoutMenus(
+			[{"id":"178924378653493616","title":"Home","url":"index.html","target":"","nav_menu":false,"nonclickable":false},{"id":"488426576521658549","title":"Projects","url":"projects.html","target":"","nav_menu":false,"nonclickable":false},{"id":"649096359646519382","title":"Featured","url":"featured.html","target":"","nav_menu":false,"nonclickable":false},{"id":"824428631753802925","title":"Services","url":"services.html","target":"","nav_menu":false,"nonclickable":false},{"id":"788599522358684938","title":"About us","url":"about-us.html","target":"","nav_menu":false,"nonclickable":false},{"id":"916106540640943969","title":"+Blog ","url":"blog.html","target":"","nav_menu":false,"nonclickable":false},{"id":"570369124872975656","title":"+++","url":"page.html","target":"","nav_menu":false,"nonclickable":false}],
+			"916106540640943969",
+			'',
+			'active',
+			false,
+			{"navigation\/item":"<li {{#id}}id=\"{{id}}\"{{\/id}} class=\"wsite-menu-item-wrap\">\n\t<a\n\t\t{{^nonclickable}}\n\t\t\t{{^nav_menu}}\n\t\t\t\thref=\"{{url}}\"\n\t\t\t{{\/nav_menu}}\n\t\t{{\/nonclickable}}\n\t\t{{#target}}\n\t\t\ttarget=\"{{target}}\"\n\t\t{{\/target}}\n\t\t{{#membership_required}}\n\t\t\tdata-membership-required=\"{{.}}\"\n\t\t{{\/membership_required}}\n\t\tclass=\"wsite-menu-item\"\n\t\t>\n\t\t{{{title_html}}}\n\t<\/a>\n\t{{#has_children}}{{> navigation\/flyout\/list}}{{\/has_children}}\n<\/li>\n","navigation\/flyout\/list":"<div class=\"wsite-menu-wrap\" style=\"display:none\">\n\t<ul class=\"wsite-menu\">\n\t\t{{#children}}{{> navigation\/flyout\/item}}{{\/children}}\n\t<\/ul>\n<\/div>\n","navigation\/flyout\/item":"<li {{#id}}id=\"{{id}}\"{{\/id}}\n\tclass=\"wsite-menu-subitem-wrap {{#is_current}}wsite-nav-current{{\/is_current}}\"\n\t>\n\t<a\n\t\t{{^nonclickable}}\n\t\t\t{{^nav_menu}}\n\t\t\t\thref=\"{{url}}\"\n\t\t\t{{\/nav_menu}}\n\t\t{{\/nonclickable}}\n\t\t{{#target}}\n\t\t\ttarget=\"{{target}}\"\n\t\t{{\/target}}\n\t\tclass=\"wsite-menu-subitem\"\n\t\t>\n\t\t<span class=\"wsite-menu-title\">\n\t\t\t{{{title_html}}}\n\t\t<\/span>{{#has_children}}<span class=\"wsite-menu-arrow\">&gt;<\/span>{{\/has_children}}\n\t<\/a>\n\t{{#has_children}}{{> navigation\/flyout\/list}}{{\/has_children}}\n<\/li>\n"},
+			{}
+		)
+	}
+//-->
+</script>
+		
+		
+	</head>
+	<body class="short-header-page  wsite-theme-light  wsite-page-blog wsite-blog-index"><div id="header-wrap">
+        <div class="container">
+            <table id="header">
+                <tr>
+                    <td id="logo"><span class="wsite-logo">
+
+	<a href="">
+		<img src="uploads/2/2/8/8/22880584/1384985626.png" style="margin-top:7px;" alt="M+ Architecture" />
+	</a>
+
+</span></td>
+                    <td class="header-right">
+                        <table>
+                            <tr>
+								<td class="social"><div style="text-align:left;"><div style="height:0px;overflow:hidden"></div>
+<span class="wsite-social wsite-social-default"><a class='first-child wsite-social-item wsite-social-mail' href='mailto:studio@mplusarchitecture.com' target='_blank' alt-text='Mail'><span class='wsite-social-item-inner'></span></a><a class='last-child wsite-social-item wsite-social-linkedin' href='http://www.linkedin.com/pub/marco-de-bortoli/38/83b/7a9/' target='_blank' alt-text='Linkedin'><span class='wsite-social-item-inner'></span></a></span>
+<div style="height:0px;overflow:hidden"></div></div></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div><!-- end container -->
+    </div><!-- end header-wrap -->  
+
+    <div id="nav-wrap">
+        <div class="container">
+			<table id="nav-table">
+				<tr>
+					<td><ul class="wsite-menu-default">
+		<li id="pg178924378653493616" class="wsite-menu-item-wrap">
+			<a
+						href="index.html"
+				class="wsite-menu-item"
+				>
+				Home
+			</a>
+			
+		</li>
+		<li id="pg488426576521658549" class="wsite-menu-item-wrap">
+			<a
+						href="projects.html"
+				class="wsite-menu-item"
+				>
+				Projects
+			</a>
+			
+		</li>
+		<li id="pg649096359646519382" class="wsite-menu-item-wrap">
+			<a
+						href="featured.html"
+				class="wsite-menu-item"
+				>
+				Featured
+			</a>
+			
+		</li>
+		<li id="pg824428631753802925" class="wsite-menu-item-wrap">
+			<a
+						href="services.html"
+				class="wsite-menu-item"
+				>
+				Services
+			</a>
+			
+		</li>
+		<li id="pg788599522358684938" class="wsite-menu-item-wrap">
+			<a
+						href="about-us.html"
+				class="wsite-menu-item"
+				>
+				About us
+			</a>
+			
+		</li>
+		<li id="active" class="wsite-menu-item-wrap">
+			<a
+						href="blog.html"
+				class="wsite-menu-item"
+				>
+				&plus;Blog 
+			</a>
+			
+		</li>
+		<li id="pg570369124872975656" class="wsite-menu-item-wrap">
+			<a
+						href="page.html"
+				class="wsite-menu-item"
+				>
+				&plus;&plus;&plus;
+			</a>
+			
+		</li>
+</ul>
+</td>
+					<td class="header-right">
+						<table>
+							<tr>
+								<td class="phone-number"></td>
+								<td class="search"></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+        </div><!-- end container -->
+    </div><!-- end nav-wrap -->
+
+    <div id="banner-wrap">
+        <div class="container">
+            <div id="banner">
+            
+                <div class="wsite-header"></div>
+				<div class="corner-left"></div>
+				<div class="corner-right"></div>
+                
+                <div style="clear:both;"></div>
+            </div><!-- end banner -->
+        </div><!-- end container -->
+    </div><!-- end banner-wrap -->
+
+    <div id="main-wrap">
+        <div class="container">
+   			<div class="wsite-elements wsite-not-footer">
+	<table 
+	id="blogTable" 
+		class="wsite-not-footer" 
+	style="border: 0; width: 100%; table-layout: fixed" 
+>
+	<tr>
+	    <td valign="top">
+	        	<div id="916106540640943969-blog" class="blog-body" style="float: left;"> 
+		<div id="wsite-content">	<div id="blog-post-542942776486360907" class="blog-post">
+	
+	
+		<div class="blog-header">
+			<h2 class="blog-title">
+					<a class="blog-title-link blog-link" href="http://UNSET/blog/fix-cafe">Fix Cafe'</a>
+
+			</h2>
+			<p class="blog-date">
+					<span class="date-text">
+		7/13/2017
+	</span>
+
+			</p>
+			<p class="blog-comments">
+					<a href="http://UNSET/blog/fix-cafe#comments" class="blog-link">
+		0 Comments
+	</a>
+
+			</p>
+		</div>
+	
+		<div class="blog-separator">&nbsp;</div>
+	
+		<div class="blog-content">
+				<div><div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center"> <a href='featured-fix-cafe.html'> <img src="uploads/2/2/8/8/22880584/dsc-8652_1_orig.jpg" alt="Picture" style="width:auto;max-width:100%" /> </a> <div style="display:block;font-size:90%"></div> </div></div>  <div><div style="height: 20px; overflow: hidden; width: 100%;"></div> <hr class="styled-hr" style="width:100%;"></hr> <div style="height: 20px; overflow: hidden; width: 100%;"></div></div>  <div class="paragraph"><br />Today we want to showcase one of our retail projects: Fix Cafe'.<br /><br />Located in Lanterns Mall, in Hastings, Barbados, this cafe' serves Italian gelato, locally roasted delicious coffee and awesome pastry.<br />Completion date was September 2016 but, my bad, I waited too long to ask <a href="https://www.marioporchetta.com/" target="_blank">Mario Porchetta Photography</a> to help me documenting the end result - thanks Mario!<br /><br />We decided for an industrial cozy modern look, warmed by the use of plenty of wood and pastel colors.<br />Small walls are used as dividers and repeated design elements to split the cafe into the different areas for the various products offered: ice cream display, visible from outside, orders placing and cash register, salads, sushi and beverages display, pastry display and coffee station.<br />All tops are white ash hardwood, counters facing are honey stained pine slats to provide ventilation to all the equipment and displays, stainless steel kitchen and fridges.<br />Ceilings were left open and painted black for an easy access and maintenance.<br />Two zinc coated trunking hang from the ceiling, hiding all the electrical and AC conduits and allowing ease of change in the lighting location.<br />Two double sliding doors dress the end wall and hide a storage and service closet.<br />Floors are done in epoxy resin with a large wood plank texture: nice, durable and easy to clean.<br /><br />We also provide a variety of different seats: stools for high tables, colorful chairs for tables and a sofa set for the small "living" area, for longer and more comfortable permanence.<br /><br />Artwork on the walls, handmade by me, is done using coffee bags burlap and painted apple crates.<br />They display books and magazines for the customers to use or borrow.<br />Door's and windows graphics catch the passers by attention and signal the cafe' in the mall.<br /><br />Have a look <a href="featured-fix-cafe.html">here</a>!</div>
+
+		</div>
+	
+	
+			<div class="blog-social  ">
+		<div class="blog-social-item blog-fb-like"><fb:like href="http://UNSET/1/post/2017/07/fix-cafe.html" width="90" layout="button_count" action="like" show_faces="false" share="false"></fb:like></div><div class="blog-social-item"><a class="twitter-share-button" href="http://twitter.com/share?url=http://UNSET/1/post/2017/07/fix-cafe.html" data-text="Fix Cafe&#039; in Barbados - M+ Architecture" data-count="horizontal"></a></div>
+		<div style="clear:both"></div>
+	</div>
+
+	
+		<div class="blog-comments-bottom">
+				<a href="http://UNSET/blog/fix-cafe#comments" class="blog-link">
+		0 Comments
+	</a>
+
+		</div>
+	
+		<div class="blog-post-separator"></div>
+	</div>	<div id="blog-post-940902081252818507" class="blog-post">
+	
+	
+		<div class="blog-header">
+			<h2 class="blog-title">
+					<a class="blog-title-link blog-link" href="http://UNSET/blog/biophilic-design">﻿Biophilic Design</a>
+
+			</h2>
+			<p class="blog-date">
+					<span class="date-text">
+		12/7/2016
+	</span>
+
+			</p>
+			<p class="blog-comments">
+					<a href="http://UNSET/blog/biophilic-design#comments" class="blog-link">
+		0 Comments
+	</a>
+
+			</p>
+		</div>
+	
+		<div class="blog-separator">&nbsp;</div>
+	
+		<div class="blog-content">
+				<span class='imgPusher' style='float:left;height:0px'></span><span style='display: table;width:auto;position:relative;float:left;max-width:100%;;clear:left;margin-top:0px;*margin-top:0px'><a><img src="uploads/2/2/8/8/22880584/p04hqvlr.jpg?250" style="margin-top: 10px; margin-bottom: 10px; margin-left: 0px; margin-right: 10px; border-width:0; max-width:100%" alt="Picture" class="galleryImageBorder wsite-image" /></a><span style="display: table-caption; caption-side: bottom; font-size: 90%; margin-top: -10px; margin-bottom: 10px; text-align: center;" class="wsite-caption"></span></span> <div class="paragraph" style="display:block;">I did not know about Biophilic Design before and, bumpeing into this article, opened new horizons!<br /><br />&#8203;<br /><a href="http://www.bbc.com/capital/story/20161125-why-you-cant-afford-to-ignore-nature-in-the-workplace?ocid" target="_blank">www.bbc.com/capital/story/20161125-why-you-cant-afford-to-ignore-nature-in-the-workplace?ocid</a></div> <hr style="width:100%;clear:both;visibility:hidden;"></hr>  <span class='imgPusher' style='float:right;height:155px'></span><span style='display: table;width:341px;position:relative;float:right;max-width:100%;;clear:right;margin-top:20px;*margin-top:40px'><a><img src="uploads/2/2/8/8/22880584/capitaland-6-battery-road-singapore-vertical-wall-garden.jpg?331" style="margin-top: 0px; margin-bottom: 0px; margin-left: 10px; margin-right: 0px; border-width:0; max-width:100%" alt="Picture" class="galleryImageBorder wsite-image" /></a><span style="display: table-caption; caption-side: bottom; font-size: 90%; margin-top: -0px; margin-bottom: 0px; text-align: center;" class="wsite-caption"></span></span> <div class="paragraph" style="text-align:justify;display:block;"><strong>Biophilia</strong> can be defined as&nbsp;<span style="color:rgb(102, 102, 102)">a</span><span style="color:rgb(102, 102, 102)">&nbsp;</span><span style="color:rgb(102, 102, 102)">love</span><span style="color:rgb(102, 102, 102)">&nbsp;</span><span style="color:rgb(102, 102, 102)">of</span><span style="color:rgb(102, 102, 102)">&nbsp;</span><span style="color:rgb(102, 102, 102)">life</span><span style="color:rgb(102, 102, 102)">&nbsp;</span><span style="color:rgb(102, 102, 102)">and</span><span style="color:rgb(102, 102, 102)">&nbsp;</span><span style="color:rgb(102, 102, 102)">the</span><span style="color:rgb(102, 102, 102)">&nbsp;</span><span style="color:rgb(102, 102, 102)">living</span><span style="color:rgb(102, 102, 102)">&nbsp;</span><span style="color:rgb(102, 102, 102)">world;</span><span style="color:rgb(102, 102, 102)">&nbsp;</span><span style="color:rgb(102, 102, 102)">the</span><span style="color:rgb(102, 102, 102)">&nbsp;</span><span style="color:rgb(102, 102, 102)">affinity</span><span style="color:rgb(102, 102, 102)">&nbsp;</span><span style="color:rgb(102, 102, 102)">of</span><span style="color:rgb(102, 102, 102)">&nbsp;</span><span style="color:rgb(102, 102, 102)">human</span><span style="color:rgb(102, 102, 102)">&nbsp;</span><span style="color:rgb(102, 102, 102)">beings</span><span style="color:rgb(102, 102, 102)">&nbsp;</span><span style="color:rgb(102, 102, 102)">for</span><span style="color:rgb(102, 102, 102)">&nbsp;</span><span style="color:rgb(102, 102, 102)">other</span><span style="color:rgb(102, 102, 102)">life</span><span style="color:rgb(102, 102, 102)">&nbsp;</span><span style="color:rgb(102, 102, 102)">forms.<br />Apply this to design &amp; architecture and you will discover new ways to say something that have very ancient origins: we all need nature to be part of our life and part of our living environment.</span><br /><br />It's interesting to apply this concept to architecture and design in a more scientific way.<br />Researches tell us that nature within our work and living spaces make us heathier, more productive, less stressed and more creative.<br />Again, nothing new but I think it's a sign of the direction we should all move towards.<br /><br />As soon as I've explored the biophilic grounds, I could find a lot more.<br />Here are some links, if you want to go deeper:<br /><br />Design:&nbsp;<a href="https://www.terrapinbrightgreen.com/reports/14-patterns/" target="_blank">www.terrapinbrightgreen.com/reports/14-patterns/</a><br /><br />Movie:&nbsp;<a href="http://www.biophilicdesign.net/" target="_blank">www.biophilicdesign.net/<br /><br />&#8203;</a>Cities:&nbsp;<a href="http://biophiliccities.org/" target="_blank">biophiliccities.org/</a><br /><br /><br /><br /></div> <hr style="width:100%;clear:both;visibility:hidden;"></hr>  <div class="paragraph"><br />And of course, we shall not forget the great <strong>Bjork</strong>! She was already spot on in 2011:&#8203;</div>  <div><div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:center"> <a> <img src="uploads/2/2/8/8/22880584/bj-rk-biophilia-super-high-resolution-avatar-gif_orig.gif" alt="Picture" style="width:auto;max-width:100%" /> </a> <div style="display:block;font-size:90%"></div> </div></div>
+
+		</div>
+	
+	
+			<div class="blog-social  ">
+		<div class="blog-social-item blog-fb-like"><fb:like href="http://UNSET/1/post/2016/12/biophilic-design.html" width="90" layout="button_count" action="like" show_faces="false" share="false"></fb:like></div><div class="blog-social-item"><a class="twitter-share-button" href="http://twitter.com/share?url=http://UNSET/1/post/2016/12/biophilic-design.html" data-text="﻿Biophilic Design - M+ Architecture" data-count="horizontal"></a></div>
+		<div style="clear:both"></div>
+	</div>
+
+	
+		<div class="blog-comments-bottom">
+				<a href="http://UNSET/blog/biophilic-design#comments" class="blog-link">
+		0 Comments
+	</a>
+
+		</div>
+	
+		<div class="blog-post-separator"></div>
+	</div>	<div id="blog-post-968470507666113668" class="blog-post">
+	
+	
+		<div class="blog-header">
+			<h2 class="blog-title">
+					<a class="blog-title-link blog-link" href="http://UNSET/blog/toowheels">TooWheels</a>
+
+			</h2>
+			<p class="blog-date">
+					<span class="date-text">
+		10/11/2016
+	</span>
+
+			</p>
+			<p class="blog-comments">
+					<a href="http://UNSET/blog/toowheels#comments" class="blog-link">
+		0 Comments
+	</a>
+
+			</p>
+		</div>
+	
+		<div class="blog-separator">&nbsp;</div>
+	
+		<div class="blog-content">
+				<span class='imgPusher' style='float:left;height:0px'></span><span style='display: table;width:290px;position:relative;float:left;max-width:100%;;clear:left;margin-top:0px;*margin-top:0px'><a><img src="uploads/2/2/8/8/22880584/toowheels1.jpg?280" style="margin-top: 10px; margin-bottom: 10px; margin-left: 0px; margin-right: 10px; border-width:0; max-width:100%" alt="Picture" class="galleryImageBorder wsite-image" /></a><span style="display: table-caption; caption-side: bottom; font-size: 90%; margin-top: -10px; margin-bottom: 10px; text-align: center;" class="wsite-caption"></span></span> <div class="paragraph" style="display:block;">TooWheels is a fantastic project.<br />I want to share it because it is inspirational, because it is Open Source, because it is a social project, because it is cad/cam and... because I like it!<br /><br />&#8203;It is a sport wheelchair that can be build with simple materials and tools: some pipes, some plywood (CAD/CAM cut or do-it-yourself) and some bicycle parts.<br />Dimensions and size can be changed at will, making it completely custom.<br /><br />&#8203;TooWheels&nbsp;<span style="color:rgb(68, 68, 68)">is a project also released in an Open Source version for non-commercial use.<br />It can be downloaded at&nbsp;<a target="_blank" href="http://toowheels.org/">toowheels.org/</a>&nbsp;and built anywhere in the world.<br />Building it yourself should cost between 180 and 250 euro.<br /><br />TooWheels has been designed by Fabrizio Alessio, designer and maker based in Turin, Italy.<br />For this great project he has been awarded, by ADI (Industrial Design Association) the Compasso D'Oro Targa Giovani, the prestigious industrial design award for young designers.<br /><br />&#8203;Well done Fabrizio!</span><br /><br /></div> <hr style="width:100%;clear:both;visibility:hidden;"></hr>
+
+		</div>
+	
+	
+			<div class="blog-social  ">
+		<div class="blog-social-item blog-fb-like"><fb:like href="http://UNSET/1/post/2016/10/toowheels.html" width="90" layout="button_count" action="like" show_faces="false" share="false"></fb:like></div><div class="blog-social-item"><a class="twitter-share-button" href="http://twitter.com/share?url=http://UNSET/1/post/2016/10/toowheels.html" data-text="TooWheels - M+ Architecture" data-count="horizontal"></a></div>
+		<div style="clear:both"></div>
+	</div>
+
+	
+		<div class="blog-comments-bottom">
+				<a href="http://UNSET/blog/toowheels#comments" class="blog-link">
+		0 Comments
+	</a>
+
+		</div>
+	
+		<div class="blog-post-separator"></div>
+	</div>	<div id="blog-post-361764592609621106" class="blog-post">
+	
+	
+		<div class="blog-header">
+			<h2 class="blog-title">
+					<a class="blog-title-link blog-link" href="http://UNSET/blog/rethinking-social-housing">Rethinking social housing</a>
+
+			</h2>
+			<p class="blog-date">
+					<span class="date-text">
+		1/6/2016
+	</span>
+
+			</p>
+			<p class="blog-comments">
+					<a href="http://UNSET/blog/rethinking-social-housing#comments" class="blog-link">
+		0 Comments
+	</a>
+
+			</p>
+		</div>
+	
+		<div class="blog-separator">&nbsp;</div>
+	
+		<div class="blog-content">
+				<div class="paragraph" style="text-align:left;">Here's some food for thoughts.<br /><br /><a target="_blank" href="http://www.theguardian.com/cities/2016/jan/04/crime-community-designer-social-housing-winnipeg"><font color="#3387a2">http://www.theguardian.com/cities/2016/jan/04/crime-community-designer-social-housing-winnipeg</font></a></div>  <div><div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:center"> <a> <img src="uploads/2/2/8/8/22880584/4743486_orig.jpg" alt="Picture" style="width:auto;max-width:100%" /> </a> <div style="display:block;font-size:90%"></div> </div></div>  <div class="paragraph" style="text-align:left;">Even the best projects, done with the best intentions, can miss the target.<br />And even the best architects can slip and not do their home works before start designing (ouch!).<br />This is particularly wrong in the case of social housing.<br />We should be especially careful and put up our best efforts on social housing projects because this shows what kind of persons and human beings we are, before we are architects.<br />Too often and too sadly, it's quite the opposite and social housing is made with the minimal money possible, with the highest density standards possible, with the most cement and least care.<br />The world is full of poorly done social housing projects that, instead of dignifying the people who live there and uplift the whole neighborhoods, only create slums and ghettos.<br /><br />I think it's time to change attitude and see social housing projects as an occasion to do great things for our fellow citizens instead of a problem to be quickly and cheaply solve.<br />&#8203;Right?</div>  <div><div style="height:20px;overflow:hidden"></div> <div id='141067125753139333-slideshow'></div>
+<script type='text/javascript'>
+(function(jQuery) {
+function init() { wSlideshow.render({elementID:"141067125753139333",nav:"thumbnails",navLocation:"bottom",captionLocation:"bottom",transition:"fade",autoplay:"0",speed:"5",aspectRatio:"auto",showControls:"true",randomStart:"false",images:[{"url":"2/2/8/8/22880584/7170803.jpg","width":"400","height":"237"},{"url":"2/2/8/8/22880584/8854369.jpg","width":"400","height":"300"},{"url":"2/2/8/8/22880584/3514817.jpg","width":"400","height":"300"},{"url":"2/2/8/8/22880584/2647756.jpg","width":"400","height":"297"},{"url":"2/2/8/8/22880584/9089572.jpg","width":"400","height":"533"},{"url":"2/2/8/8/22880584/4558622.jpg","width":"400","height":"533"},{"url":"2/2/8/8/22880584/3395839.jpg","width":"400","height":"298"},{"url":"2/2/8/8/22880584/5561443.jpg","width":"400","height":"540"},{"url":"2/2/8/8/22880584/2450670.jpg","width":"400","height":"532"},{"url":"2/2/8/8/22880584/5154269.jpg","width":"400","height":"306"},{"url":"2/2/8/8/22880584/8829307.jpg","width":"400","height":"265"},{"url":"2/2/8/8/22880584/1932953.jpg","width":"400","height":"601"},{"url":"2/2/8/8/22880584/2096560.jpg","width":"400","height":"265"},{"url":"2/2/8/8/22880584/2351862.jpg","width":"400","height":"601"},{"url":"2/2/8/8/22880584/1816013.jpg","width":"400","height":"323"},{"url":"2/2/8/8/22880584/4200828.jpg","width":"400","height":"148"},{"url":"2/2/8/8/22880584/3114631.jpg","width":"400","height":"173"},{"url":"2/2/8/8/22880584/72647.jpg","width":"400","height":"322"},{"url":"2/2/8/8/22880584/1368676.jpg","width":"400","height":"130"},{"url":"2/2/8/8/22880584/5682854.jpg","width":"400","height":"381"},{"url":"2/2/8/8/22880584/1696690.jpg","width":"400","height":"423"},{"url":"2/2/8/8/22880584/6916032.jpg","width":"400","height":"423"},{"url":"2/2/8/8/22880584/5747043.jpg","width":"400","height":"423"}]}) }
+jQuery ? jQuery(init) : document.observe('dom:loaded', init)
+})(window._W && _W.jQuery)
+</script>
+ <div style="height:20px;overflow:hidden"></div></div>
+
+		</div>
+	
+	
+			<div class="blog-social  ">
+		<div class="blog-social-item blog-fb-like"><fb:like href="http://UNSET/1/post/2016/01/rethinking-social-housing.html" width="90" layout="button_count" action="like" show_faces="false" share="false"></fb:like></div><div class="blog-social-item"><a class="twitter-share-button" href="http://twitter.com/share?url=http://UNSET/1/post/2016/01/rethinking-social-housing.html" data-text="Rethinking social housing - M+ Architecture" data-count="horizontal"></a></div>
+		<div style="clear:both"></div>
+	</div>
+
+	
+		<div class="blog-comments-bottom">
+				<a href="http://UNSET/blog/rethinking-social-housing#comments" class="blog-link">
+		0 Comments
+	</a>
+
+		</div>
+	
+		<div class="blog-post-separator"></div>
+	</div>	<div id="blog-post-728592544670119681" class="blog-post">
+	
+	
+		<div class="blog-header">
+			<h2 class="blog-title">
+					<a class="blog-title-link blog-link" href="http://UNSET/blog/cool-burglar-bars-wrought-iron">Cool burglar bars & wrought iron</a>
+
+			</h2>
+			<p class="blog-date">
+					<span class="date-text">
+		4/9/2015
+	</span>
+
+			</p>
+			<p class="blog-comments">
+					<a href="http://UNSET/blog/cool-burglar-bars-wrought-iron#comments" class="blog-link">
+		0 Comments
+	</a>
+
+			</p>
+		</div>
+	
+		<div class="blog-separator">&nbsp;</div>
+	
+		<div class="blog-content">
+				<div class="paragraph" style="text-align:left;">We all know how hard it is to have burglar bars that do not look like prison bars!<br /><br />For a recently completed project I have designed these burglar bars that, I think, are very cool.<br /><br /></div>  <div><div class="wsite-image wsite-image-border-thin " style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:center"> <a> <img src="uploads/2/2/8/8/22880584/9478383_orig.jpg" alt="Picture" style="width:auto;max-width:100%" /> </a> <div style="display:block;font-size:90%"></div> </div></div>  <div class="paragraph" style="text-align:left;"><span style="">The design takes in consideration, of course, safety but add some elements that smooth out the whole burglar bars feeling: t</span><span style="">hey become decorative panels.</span><br />The twisted bars and "diamonds" decorative elements were meant to host some colored glass inserts but budget and time constraints led us to find different solutions.<br /><br />Here's the original design:<br /></div>  <div><div style="height:20px;overflow:hidden"></div> <div id='204316735514419278-slideshow'></div>
+<script type='text/javascript'>
+(function(jQuery) {
+function init() { wSlideshow.render({elementID:"204316735514419278",nav:"thumbnails",navLocation:"bottom",captionLocation:"bottom",transition:"fade",autoplay:"0",speed:"5",aspectRatio:"auto",showControls:"true",randomStart:"false",images:[{"url":"2/2/8/8/22880584/3598619.jpg","width":"400","height":"200"},{"url":"2/2/8/8/22880584/2468542.jpg","width":"400","height":"203"},{"url":"2/2/8/8/22880584/8420678.jpg","width":"400","height":"680"},{"url":"2/2/8/8/22880584/8099428.jpg","width":"400","height":"577"},{"url":"2/2/8/8/22880584/7738304.jpg","width":"400","height":"730"},{"url":"2/2/8/8/22880584/5947388.jpg","width":"400","height":"551"},{"url":"2/2/8/8/22880584/239295.jpg","width":"400","height":"697"}]}) }
+jQuery ? jQuery(init) : document.observe('dom:loaded', init)
+})(window._W && _W.jQuery)
+</script>
+ <div style="height:20px;overflow:hidden"></div></div>  <div class="paragraph" style="text-align:left;">And here is the final installed burglar bars, with power coated bronze and antique gold finish:</div>  <div><div style="height:20px;overflow:hidden"></div> <div id='744741356450283393-slideshow'></div>
+<script type='text/javascript'>
+(function(jQuery) {
+function init() { wSlideshow.render({elementID:"744741356450283393",nav:"thumbnails",navLocation:"bottom",captionLocation:"bottom",transition:"fade",autoplay:"0",speed:"5",aspectRatio:"auto",showControls:"true",randomStart:"false",images:[{"url":"2/2/8/8/22880584/5943063.jpg","width":"400","height":"228"},{"url":"2/2/8/8/22880584/4041809.jpg","width":"400","height":"228"},{"url":"2/2/8/8/22880584/4352318.jpg","width":"400","height":"701"},{"url":"2/2/8/8/22880584/8904274.jpg","width":"400","height":"228"},{"url":"2/2/8/8/22880584/6256655.jpg","width":"400","height":"701"},{"url":"2/2/8/8/22880584/2439264.jpg","width":"400","height":"701"},{"url":"2/2/8/8/22880584/8985764.jpg","width":"400","height":"711"},{"url":"2/2/8/8/22880584/8249651.jpg","width":"400","height":"701"},{"url":"2/2/8/8/22880584/9442502.jpg","width":"400","height":"701"},{"url":"2/2/8/8/22880584/8484692.jpg","width":"400","height":"701"},{"url":"2/2/8/8/22880584/4134148.jpg","width":"400","height":"711"},{"url":"2/2/8/8/22880584/3925556.jpg","width":"400","height":"533"},{"url":"2/2/8/8/22880584/3205640.jpg","width":"400","height":"533"},{"url":"2/2/8/8/22880584/9030822.jpg","width":"400","height":"533"},{"url":"2/2/8/8/22880584/4487082.jpg","width":"400","height":"533"},{"url":"2/2/8/8/22880584/5713737.jpg","width":"400","height":"300"},{"url":"2/2/8/8/22880584/9466563.jpg","width":"400","height":"533"},{"url":"2/2/8/8/22880584/7281742.jpg","width":"400","height":"533"}]}) }
+jQuery ? jQuery(init) : document.observe('dom:loaded', init)
+})(window._W && _W.jQuery)
+</script>
+ <div style="height:20px;overflow:hidden"></div></div>
+
+		</div>
+	
+	
+			<div class="blog-social  ">
+		<div class="blog-social-item blog-fb-like"><fb:like href="http://UNSET/1/post/2015/04/cool-burglar-bars-wrought-iron.html" width="90" layout="button_count" action="like" show_faces="false" share="false"></fb:like></div><div class="blog-social-item"><a class="twitter-share-button" href="http://twitter.com/share?url=http://UNSET/1/post/2015/04/cool-burglar-bars-wrought-iron.html" data-text="Cool burglar bars &amp; wrought iron - M+ Architecture" data-count="horizontal"></a></div>
+		<div style="clear:both"></div>
+	</div>
+
+	
+		<div class="blog-comments-bottom">
+				<a href="http://UNSET/blog/cool-burglar-bars-wrought-iron#comments" class="blog-link">
+		0 Comments
+	</a>
+
+		</div>
+	
+		<div class="blog-post-separator"></div>
+	</div>	<div id="blog-post-190642530299319227" class="blog-post">
+	
+	
+		<div class="blog-header">
+			<h2 class="blog-title">
+					<a class="blog-title-link blog-link" href="http://UNSET/blog/fratino-dining-table-a-cnc-machine-cut-prototype">"Fratino" Dining Table: a CNC machine cut prototype</a>
+
+			</h2>
+			<p class="blog-date">
+					<span class="date-text">
+		2/18/2015
+	</span>
+
+			</p>
+			<p class="blog-comments">
+					<a href="http://UNSET/blog/fratino-dining-table-a-cnc-machine-cut-prototype#comments" class="blog-link">
+		1 Comment
+	</a>
+
+			</p>
+		</div>
+	
+		<div class="blog-separator">&nbsp;</div>
+	
+		<div class="blog-content">
+				<div>
+<div class="wsite-image wsite-image-border-thin" style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:center">
+<a><img src="uploads/2/2/8/8/22880584/5926016_orig.jpg" alt="Picture" style="width:auto;max-width:100%"></a>
+
+<div style="display:block;font-size:90%"></div>
+</div>
+</div><span class='imgPusher' style='float:left;height:0px'></span><span style='display: table;width:134px;position:relative;float:left;max-width:100%;;clear:left;margin-top:0px;*margin-top:0px'><a><img src="uploads/2/2/8/8/22880584/1454351.jpg?116" style="margin-top: 5px; margin-bottom: 10px; margin-left: 0px; margin-right: 10px; border-width:1px;padding:3px; max-width:100%" alt="Picture" class="galleryImageBorder wsite-image"></a><span style="display: table-caption; caption-side: bottom; font-size: 90%; margin-top: -10px; margin-bottom: 10px; text-align: center;" class="wsite-caption"></span></span>
+
+<div class="paragraph" style="text-align:justify;display:block;">
+I've been asked to design a dining table for my good friends P&amp;S last year.<br>
+After getting very high quotations on my first design and inspired by blogs and web sites like OpenDesk, I've decided to design a&nbsp;CNC machine cut&nbsp;dining table.<br>
+P&amp;S required the table to comfortably seat 10 people (up to 12) for hosting; it should also have the possibility to get smaller for everyday use.<br>
+<br>
+The "Fratino" - literally "little friar" in Italian - is a long and narrow table type, &nbsp;traditionally used by friars in monasteries.<br>
+I have an antique fratino table in my house and the dining experience is nicer and more intimate than standard tables.<br>
+I liked the idea of a narrow table so that people can dine close in front to each other; the table type was also ideal to be by-folding to extend its capacity.<br>
+<br>
+The table is 7 ft (2133 mm) long and 2 ft (609 mm) wide when closed - 4 ft (1219 mm) open.<br>
+<br>
+Hope you like it!!!<br>
+<br>
+<em><font size="2">A big hug to P&amp;S that contributed to this project!<br>
+And a special thanks goes to Alan Cox and AC Woodhouse for making this project come true; Randy Seraphin and the workshop guys made an amazing job!</font><br></em><br>
+<em><font size="2"><strong>PS: If you like it, you can have it!!! Please see below</strong></font></em><br>
+<br>
+<br>
+Here it is:<br>
+</div>
+<hr style="width:100%;clear:both;visibility:hidden;">
+
+<div>
+<div class="wsite-multicol">
+<div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
+<table class="wsite-multicol-table">
+<tbody class="wsite-multicol-tbody">
+<tr class="wsite-multicol-tr">
+<td class="wsite-multicol-col" style="width:37.278911564626%; padding:0 15px;">
+<div>
+<div class="wsite-image wsite-image-border-thin" style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:left">
+<a><img src="uploads/2/2/8/8/22880584/4921057.jpg?219" alt="Picture" style="width:219;max-width:100%"></a>
+
+<div style="display:block;font-size:90%"></div>
+</div>
+</div>
+</td>
+
+<td class="wsite-multicol-col" style="width:62.721088435374%; padding:0 15px;">
+<div>
+<div class="wsite-image wsite-image-border-none" style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:right">
+<a><img src="uploads/2/2/8/8/22880584/5274207.jpg?415" alt="Picture" style="width:415;max-width:100%"></a>
+
+<div style="display:block;font-size:90%"></div>
+</div>
+</div>
+
+<div class="paragraph" style="text-align:right;">
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<span style="background-color: initial;">Closed and open.</span><br>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+<div>
+<div class="wsite-multicol">
+<div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
+<table class="wsite-multicol-table">
+<tbody class="wsite-multicol-tbody">
+<tr class="wsite-multicol-tr">
+<td class="wsite-multicol-col" style="width:50%; padding:0 15px;">
+<div>
+<div class="wsite-image wsite-image-border-thin" style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:center">
+<a><img src="uploads/2/2/8/8/22880584/2106545_orig.jpg" alt="Picture" style="width:100%;max-width:456px"></a>
+
+<div style="display:block;font-size:90%"></div>
+</div>
+</div>
+</td>
+
+<td class="wsite-multicol-col" style="width:50%; padding:0 15px;">
+<div>
+<div class="wsite-image wsite-image-border-thin" style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:center">
+<a><img src="uploads/2/2/8/8/22880584/7526665_orig.jpg" alt="Picture" style="width:100%;max-width:456px"></a>
+
+<div style="display:block;font-size:90%"></div>
+</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+<div class="paragraph" style="text-align:left;">
+Some other images:
+</div>
+
+<div>
+<div style="height: 20px; overflow: hidden; width: 100%;"></div>
+<hr class="styled-hr" style="width:100%;">
+
+<div style="height: 20px; overflow: hidden; width: 100%;"></div>
+</div>
+
+<div class="paragraph" style="text-align:left;">
+And some details:
+</div>
+
+<div>
+<div class="wsite-image wsite-image-border-thin" style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:center">
+<a><img src="uploads/2/2/8/8/22880584/3755684_orig.jpg" alt="Picture" style="width:100%;max-width:1100px"></a>
+
+<div style="display:block;font-size:90%"></div>
+</div>
+</div>
+
+<div>
+<div class="wsite-image wsite-image-border-thin" style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:center">
+<a><img src="uploads/2/2/8/8/22880584/9464900_orig.jpg" alt="Picture" style="width:auto;max-width:100%"></a>
+
+<div style="display:block;font-size:90%"></div>
+</div>
+</div>
+
+<div class="paragraph" style="text-align:left;">
+Images of the&nbsp;MDF&nbsp;prototype:
+</div>
+
+<div>
+<div class="wsite-multicol">
+<div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
+<table class="wsite-multicol-table">
+<tbody class="wsite-multicol-tbody">
+<tr class="wsite-multicol-tr">
+<td class="wsite-multicol-col" style="width:33.333333333333%; padding:0 15px;">
+<div>
+<div class="wsite-image wsite-image-border-thin" style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:center">
+<a><img src="uploads/2/2/8/8/22880584/9123723_orig.jpg" alt="Picture" style="width:100%;max-width:480px"></a>
+
+<div style="display:block;font-size:90%"></div>
+</div>
+</div>
+
+<div>
+<div class="wsite-image wsite-image-border-thin" style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:center">
+<a><img src="uploads/2/2/8/8/22880584/8440002_orig.jpg" alt="Picture" style="width:100%;max-width:640px"></a>
+
+<div style="display:block;font-size:90%"></div>
+</div>
+</div>
+</td>
+
+<td class="wsite-multicol-col" style="width:33.333333333333%; padding:0 15px;">
+<div>
+<div class="wsite-image wsite-image-border-thin" style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:right">
+<a><img src="uploads/2/2/8/8/22880584/8314266_orig.jpg" alt="Picture" style="width:100%;max-width:480px"></a>
+
+<div style="display:block;font-size:90%"></div>
+</div>
+</div>
+
+<div>
+<div class="wsite-image wsite-image-border-thin" style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:left">
+<a><img src="uploads/2/2/8/8/22880584/7394555_orig.jpg" alt="Picture" style="width:auto;max-width:100%"></a>
+
+<div style="display:block;font-size:90%"></div>
+</div>
+</div>
+</td>
+
+<td class="wsite-multicol-col" style="width:33.333333333333%; padding:0 15px;">
+<div>
+<div class="wsite-image wsite-image-border-thin" style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:right">
+<a><img src="uploads/2/2/8/8/22880584/3327604_orig.jpg" alt="Picture" style="width:100%;max-width:480px"></a>
+
+<div style="display:block;font-size:90%"></div>
+</div>
+</div>
+
+<div>
+<div class="wsite-image wsite-image-border-thin" style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:left">
+<a><img src="uploads/2/2/8/8/22880584/5031402.jpg?118" alt="Picture" style="width:118;max-width:100%"></a>
+
+<div style="display:block;font-size:90%"></div>
+</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+<div>
+<div style="height: 20px; overflow: hidden; width: 100%;"></div>
+<hr class="styled-hr" style="width:100%;">
+
+<div style="height: 20px; overflow: hidden; width: 100%;"></div>
+</div>
+
+<div class="paragraph" style="text-align:left;">
+Since my starting point has been from material I have found for free on line, it seems fair to me to share my DXF files for the CNC machine cut programming.<br>
+<br>
+For FREE, of course!<br>
+<br>
+Please subscribe to our mailing list and we'll provide <strong>free DXF file</strong>&nbsp;- <u><strong>Licence of use for private use only!</strong></u>
+</div>
+
+<div>
+<div id="137276646449675866" align="left" style="width: 100%; overflow-y: hidden;" class="wcustomhtml">
+<!-- Begin MailChimp Signup Form -->
+<link href="http://cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css"><style type="text/css">
+        #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+        /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+           We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>
+
+<div id="mc_embed_signup">
+<form action="//mplusarchitecture.us12.list-manage.com/subscribe/post?u=2461eabe8a65d191435abf6b1&amp;id=6d97123af0&amp;SIGNUP=CNCFRATINO" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="">
+<div id="mc_embed_signup_scroll">
+<h2>Subscribe to our mailing list</h2>
+
+<div class="indicates-required">
+<span class="asterisk">*</span> indicates required
+</div>
+
+<div class="mc-field-group">
+<label for="mce-FNAME">First Name</label> <input type="text" value="" name="FNAME" class="" id="mce-FNAME">
+</div>
+
+<div class="mc-field-group">
+<label for="mce-LNAME">Last Name</label> <input type="text" value="" name="LNAME" class="" id="mce-LNAME">
+</div>
+
+<div class="mc-field-group">
+<label for="mce-EMAIL">Email Address <span class="asterisk">*</span></label> <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+</div>
+
+<div id="mce-responses" class="clear">
+<div class="response" id="mce-error-response" style="display:none"></div>
+
+<div class="response" id="mce-success-response" style="display:none"></div>
+</div><!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+
+<div style="position: absolute; left: -5000px;" aria-hidden="true">
+<input type="text" name="b_2461eabe8a65d191435abf6b1_6d97123af0" tabindex="-1" value="">
+</div>
+
+<div class="clear">
+<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+</div>
+</div>
+</form>
+</div><script type='text/javascript' src='http://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'>
+</script><script type='text/javascript'>
+(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[0]='EMAIL';ftypes[0]='email';fnames[3]='CNCFRATINO';ftypes[3]='text';}(jQuery));var $mcj = jQuery.noConflict(true);
+</script> <!--End mc_embed_signup-->
+</div>
+</div>
+
+
+		</div>
+	
+	
+			<div class="blog-social  ">
+		<div class="blog-social-item blog-fb-like"><fb:like href="http://UNSET/1/post/2015/02/fratino-dining-table-a-cnc-machine-cut-prototype.html" width="90" layout="button_count" action="like" show_faces="false" share="false"></fb:like></div><div class="blog-social-item"><a class="twitter-share-button" href="http://twitter.com/share?url=http://UNSET/1/post/2015/02/fratino-dining-table-a-cnc-machine-cut-prototype.html" data-text="&quot;Fratino&quot; Dining Table: a CNC machine cut prototype - M+ Architecture" data-count="horizontal"></a></div>
+		<div style="clear:both"></div>
+	</div>
+
+	
+		<div class="blog-comments-bottom">
+				<a href="http://UNSET/blog/fratino-dining-table-a-cnc-machine-cut-prototype#comments" class="blog-link">
+		1 Comment
+	</a>
+
+		</div>
+	
+		<div class="blog-post-separator"></div>
+	</div>	<div id="blog-post-643816620568716529" class="blog-post">
+	
+	
+		<div class="blog-header">
+			<h2 class="blog-title">
+					<a class="blog-title-link blog-link" href="http://UNSET/blog/carlo-fantin-an-amazing-artist-and-craftsman">Carlo Fantin: an amazing artist and craftsman.</a>
+
+			</h2>
+			<p class="blog-date">
+					<span class="date-text">
+		2/4/2015
+	</span>
+
+			</p>
+			<p class="blog-comments">
+					<a href="http://UNSET/blog/carlo-fantin-an-amazing-artist-and-craftsman#comments" class="blog-link">
+		2 Comments
+	</a>
+
+			</p>
+		</div>
+	
+		<div class="blog-separator">&nbsp;</div>
+	
+		<div class="blog-content">
+				<div><div class="wsite-image wsite-image-border-thin " style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:center"> <a> <img src="uploads/2/2/8/8/22880584/4905175_orig.jpg" alt="Picture" style="width:100%;max-width:649px" /> </a> <div style="display:block;font-size:90%"></div> </div></div>  <div class="paragraph" style="text-align:left;"><font size="2">Collective Imagery - Series of 30, 6" x 6" hand-cut paper pieces that collectively create a large 31" x 37.5" portrait.</font></div>  <div><div style="height: 20px; overflow: hidden; width: 100%;"></div> <hr class="styled-hr" style="width:100%;"></hr> <div style="height: 20px; overflow: hidden; width: 100%;"></div></div>  <div class="paragraph" style="text-align:left;">Thanks to Designboom, I've recently discovered this amazing artist, <strong>Carlo Fantin</strong>.<span id="selectionBoundary_1423058220320_11128604039549828" class="rangySelectionBoundary" style="line-height: 0; display: none;">&#65279;</span><br /><br />His work is simply staggering! I can only imagine the infinite patience and skills required to hand-cut the sheets of paper with such precision without damaging them in the process.<br />If anyone have ever tried to hand-cut a stencil or a painting masking sheet can easily appreciate Carlo Fantin's works.<br /><br />The technical aspect is staggering but the artistic skills are also great &nbsp;- his art dealing with modern social media and the religious aspect of the people approach to them.<br />I really like his work and I'm sure he's already on the path to fame!<br /><br />Here are some samples of his works:<br /><br /></div>  <div><div style="height:20px;overflow:hidden"></div> <div id='219333783699062476-slideshow'></div> <script type='text/javascript'> (function(jQuery) { function init() { wSlideshow.render({elementID:"219333783699062476",nav:"thumbnails",navLocation:"bottom",captionLocation:"bottom",transition:"fade",autoplay:"0",speed:"5",aspectRatio:"auto",showControls:"true",randomStart:"false",images:[{"url":"2/2/8/8/22880584/2427762.jpg","width":"400","height":"337","caption":"The Two Madonnas;\nSeries of 30, 6&quot; x 6&quot; pieces that create a large 37.5&quot; x 31&quot; portrait"},{"url":"2/2/8/8/22880584/5896214.jpg","width":"400","height":"534","caption":"Sacred Facebook Heart;\n24&quot; x 18&quot; hand-cut paper"},{"url":"2/2/8/8/22880584/2518998.jpg","width":"400","height":"560","caption":"Virgin with Facebook Tattoos;\n18&quot; x 12&quot; hand-cut paper"},{"url":"2/2/8/8/22880584/3264070.jpg","width":"400","height":"481","caption":"Virgin with Facebook Tattoos;\nDetail"},{"url":"2/2/8/8/22880584/8918553.jpg","width":"400","height":"560","caption":"Virgin with Twitter Tattoos;\n18&quot; x 12&quot; hand-cut paper"},{"url":"2/2/8/8/22880584/1904525.jpg","width":"400","height":"400","caption":"InstaIcon;\n18&quot; x 18&quot; hand-cut paper"},{"url":"2/2/8/8/22880584/6334395.jpg","width":"400","height":"400","caption":"La Madonna de las cholas;\n18&quot; x 18&quot; hand-cut paper"},{"url":"2/2/8/8/22880584/8920024.jpg","width":"400","height":"400","caption":"La Madonna de las cholas;\nDetail"},{"url":"2/2/8/8/22880584/9018482.jpg","width":"400","height":"400","caption":"La Madonna de las cholas;\nDetail"},{"url":"2/2/8/8/22880584/5908532.jpg","width":"400","height":"400","caption":"Madonna de lo Followers de Twitter;\n18&quot; x 18&quot; hand-cut paper"},{"url":"2/2/8/8/22880584/195451.jpg","width":"400","height":"400","caption":"Madonna de lo Followers de Twitter;\nDetail"},{"url":"2/2/8/8/22880584/581974.jpg","width":"400","height":"400","caption":"La Virgen Maria de lo Hastags;\n18&quot; x 18&quot; hand-cut paper"},{"url":"2/2/8/8/22880584/3673403.jpg","width":"400","height":"400","caption":"La Virgen Maria de lo Hastags;\nDetail"},{"url":"2/2/8/8/22880584/6568887.jpg","width":"400","height":"560","caption":"Instaddictive:\n18&quot; x 24&quot; hand-cut paper"}]}) } jQuery ? jQuery(init) : document.observe('dom:loaded', init) })(window._W && _W.jQuery) </script>  <div style="height:20px;overflow:hidden"></div></div>  <div class="paragraph" style="text-align:left;">You can find more images and info on Carlo Fantin's work here:<br />-&nbsp;<a href="http://www.carlofantin.squarespace.com/" target="_blank">http://www.carlofantin.squarespace.com/</a><br />-&nbsp;<a href="https://www.facebook.com/CarloFantinDesign" target="_blank">https://www.facebook.com/CarloFantinDesign</a><br />-&nbsp;<a href="https://twitter.com/carlofantin" target="_blank">https://twitter.com/carlofantin</a></div>
+
+		</div>
+	
+	
+			<div class="blog-social  ">
+		<div class="blog-social-item blog-fb-like"><fb:like href="http://UNSET/1/post/2015/02/carlo-fantin-an-amazing-artist-and-craftsman.html" width="90" layout="button_count" action="like" show_faces="false" share="false"></fb:like></div><div class="blog-social-item"><a class="twitter-share-button" href="http://twitter.com/share?url=http://UNSET/1/post/2015/02/carlo-fantin-an-amazing-artist-and-craftsman.html" data-text="Carlo Fantin - M+ Architecture" data-count="horizontal"></a></div>
+		<div style="clear:both"></div>
+	</div>
+
+	
+		<div class="blog-comments-bottom">
+				<a href="http://UNSET/blog/carlo-fantin-an-amazing-artist-and-craftsman#comments" class="blog-link">
+		2 Comments
+	</a>
+
+		</div>
+	
+		<div class="blog-post-separator"></div>
+	</div>	<div id="blog-post-787998535410736118" class="blog-post">
+	
+	
+		<div class="blog-header">
+			<h2 class="blog-title">
+					<a class="blog-title-link blog-link" href="http://UNSET/blog/heydar-aliyev-center-by-zaha-hadid-architects-baku-azerbaijan">Heydar Aliyev Center by Zaha Hadid Architects, Baku, Azerbaijan</a>
+
+			</h2>
+			<p class="blog-date">
+					<span class="date-text">
+		11/26/2013
+	</span>
+
+			</p>
+			<p class="blog-comments">
+					<a href="http://UNSET/blog/heydar-aliyev-center-by-zaha-hadid-architects-baku-azerbaijan#comments" class="blog-link">
+		3 Comments
+	</a>
+
+			</p>
+		</div>
+	
+		<div class="blog-separator">&nbsp;</div>
+	
+		<div class="blog-content">
+				<div><div class="wsite-image wsite-image-border-thin " style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:center"> <a> <img src="uploads/2/2/8/8/22880584/3275774.jpg?463" alt="Picture" style="width:auto;max-width:100%" /> </a> <div style="display:block;font-size:90%"></div> </div></div>  <div class="paragraph">Here are some images of the Heyday Aliyev Center&nbsp;hosting the former soviet nation&rsquo;s cultural programs.<br />It's a very cool project, impressive in its lines and forms.<br />The public plaza and gardens are fluidly connected to the main building and the column free internal spaces are simply amazing!<br />Have a look!</div>  <div><div style="height:20px;overflow:hidden"></div> <div id='342651227258570130-slideshow'></div> <script type='text/javascript'> (function(jQuery) { function init() { wSlideshow.render({elementID:"342651227258570130",nav:"double_thumbnails",navLocation:"right",captionLocation:"bottom",transition:"fade",autoplay:"1",speed:"5",aspectRatio:"auto",showControls:"true",randomStart:"false",images:[{"url":"2/2/8/8/22880584/9007859.jpg","width":"333","height":"221"},{"url":"2/2/8/8/22880584/2280017.jpg","width":"333","height":"168","caption":"view from the public plaza"},{"url":"2/2/8/8/22880584/4612828.jpg","width":"333","height":"221","caption":"the plaza develop into the building"},{"url":"2/2/8/8/22880584/7283457.jpg","width":"333","height":"221","caption":"terraced landscape"},{"url":"2/2/8/8/22880584/2396443.jpg","width":"333","height":"173","caption":"night view"},{"url":"2/2/8/8/22880584/3965450.jpg","width":"205","height":"250"},{"url":"2/2/8/8/22880584/7134547.jpg","width":"325","height":"250","caption":"the building emerging from the plaza"},{"url":"2/2/8/8/22880584/3211899.jpg","width":"317","height":"250"},{"url":"2/2/8/8/22880584/2548780.jpg","width":"312","height":"250","caption":"theatre"},{"url":"2/2/8/8/22880584/8649403.jpg","width":"333","height":"214","caption":"lobby"},{"url":"2/2/8/8/22880584/7541198.jpg","width":"333","height":"221"},{"url":"2/2/8/8/22880584/6174801.jpg","width":"333","height":"221"},{"url":"2/2/8/8/22880584/6203919.jpg","width":"333","height":"221","caption":"strip lighting following the curves"},{"url":"2/2/8/8/22880584/8832698.jpg","width":"166","height":"250"},{"url":"2/2/8/8/22880584/5143729.jpg","width":"333","height":"221"},{"url":"2/2/8/8/22880584/8527846.jpg","width":"333","height":"150"},{"url":"2/2/8/8/22880584/4644153.jpg","width":"333","height":"221"},{"url":"2/2/8/8/22880584/8146776.jpg","width":"166","height":"250"},{"url":"2/2/8/8/22880584/8523457.jpg","width":"333","height":"235","caption":"view from the surrounding street"},{"url":"2/2/8/8/22880584/4343542.jpg","width":"333","height":"155","caption":"general view"},{"url":"2/2/8/8/22880584/7327475.jpg","width":"333","height":"222","caption":"Contrast with the surrounding"},{"url":"2/2/8/8/22880584/5334180.jpg","width":"333","height":"172","caption":"full view of Heydar Aliyev Center by night"}]}) } jQuery ? jQuery(init) : document.observe('dom:loaded', init) })(window._W && _W.jQuery) </script>  <div style="height:20px;overflow:hidden"></div></div>  <div class="paragraph" style="text-align:left;">And here is a slideshow for the architects: plans, sections, construction photos, etc...</div>  <div><div style="height:20px;overflow:hidden"></div> <div id='294706822537846836-slideshow'></div> <script type='text/javascript'> (function(jQuery) { function init() { wSlideshow.render({elementID:"294706822537846836",nav:"double_thumbnails",navLocation:"right",captionLocation:"bottom",transition:"fade",autoplay:"0",speed:"5",aspectRatio:"auto",showControls:"true",randomStart:"false",images:[{"url":"2/2/8/8/22880584/7781563.jpg","width":"333","height":"249"},{"url":"2/2/8/8/22880584/687616.jpg","width":"333","height":"221"},{"url":"2/2/8/8/22880584/4578631.jpg","width":"221","height":"250"},{"url":"2/2/8/8/22880584/6697692.jpg","width":"218","height":"250"},{"url":"2/2/8/8/22880584/8339341.jpg","width":"333","height":"222"},{"url":"2/2/8/8/22880584/209093.jpg","width":"315","height":"250"},{"url":"2/2/8/8/22880584/3847461.jpg","width":"315","height":"250"},{"url":"2/2/8/8/22880584/6719531.jpg","width":"315","height":"250"},{"url":"2/2/8/8/22880584/2670952.jpg","width":"315","height":"250"},{"url":"2/2/8/8/22880584/1912407.jpg","width":"315","height":"250"},{"url":"2/2/8/8/22880584/4344301.jpg","width":"315","height":"250"},{"url":"2/2/8/8/22880584/5698758.jpg","width":"315","height":"250"},{"url":"2/2/8/8/22880584/7376419.jpg","width":"333","height":"209","caption":"site plan and section"},{"url":"2/2/8/8/22880584/7804742.jpg","width":"225","height":"250","caption":"ground floor plan 1. museum book store / gift shop 2. welcome zone 3. museum café / bar 4. information desk 5. museum lobby 6. welcome gallery 7. link tunnel 8. cloakroom 9. conference center lobby 10. multi-purpose hall 11. service kitchen 12. service lobby 13. main stage 14. loading area 15. back stage area 16. security 17. auditorium 18. VIP entrance / president&#039;s room 19. PA 20. work room + meeting room 21. restroom 22. rest area 23. kitchenette 24. storage 25. auditorium bar 26. auditorium lobby 27. courtyard"},{"url":"2/2/8/8/22880584/6684080.jpg","width":"204","height":"250","caption":"first floor plan 1. library 2. open to below 3. thematic temporary art gallery 4. main stage 5. auditorium 6. service kitchen 7. restaurant 8. storage 9. lighting control 10. sound control 11. projection room 12. auditorium balcony 13. multi-purpose hall / open to below"},{"url":"2/2/8/8/22880584/5509200.jpg","width":"206","height":"250","caption":"second floor plan 1. permanent art gallery 2. open to below 3. library 4. reading zone 5. meeting room lobby 6. meeting room 7. service lobby 8. mezzanine café 9. storage room 10. translator room 11. auditorium entrance hall 12. balcony"},{"url":"2/2/8/8/22880584/7850889.jpg","width":"204","height":"250","caption":"third floor plan 1. library 2. open to below 3. network room 4. service room 5. kitchen and staff area 6. administration office 7. dimmer room"},{"url":"2/2/8/8/22880584/302764.jpg","width":"205","height":"250","caption":"fourth floor plan 1. library learning and reading zone 2. open to below 3. stage system steel platform 4. storage 5. permanent art gallery 6. male restroom 7. female restroom"},{"url":"2/2/8/8/22880584/2901621.jpg","width":"205","height":"250","caption":"fifth floor plan 1. library 2. open to below 3. presidential suite 4. rest area 5. restroom 6. kitchenette"},{"url":"2/2/8/8/22880584/2454785.jpg","width":"205","height":"250","caption":"sixth floor plan 1. library 2. open to below"},{"url":"2/2/8/8/22880584/1717245.jpg","width":"205","height":"250","caption":"seventh floor plan 1. restaurant 2. open to below 3. kitchen 4. cloakroom"},{"url":"2/2/8/8/22880584/1156228.jpg","width":"205","height":"250","caption":"eighth floor plan 1. restaurant 2. open to below"},{"url":"2/2/8/8/22880584/8722850.jpg","width":"333","height":"124","caption":"north west elevation"},{"url":"2/2/8/8/22880584/3408457.jpg","width":"333","height":"133","caption":"south west elevation"},{"url":"2/2/8/8/22880584/360268.jpg","width":"333","height":"139","caption":"south east elevation"},{"url":"2/2/8/8/22880584/2036809.jpg","width":"333","height":"143","caption":"section 1. learning and reading zone 2. multimedia zone 3. business zone 4. children&#039;s activity zone 5. welcome zone 6. library storage 7. library stack 8. disabled restroom 9. janitor&#039;s room 10. conference center lobby 11. female restroom 12. loading bay 13. meeting room 14. network room 15. auditorium / multi-purpose hall storage 16. male restroom 17. service kitchen 18. AHU room 19. main stage 20. backstage storage 21. auditorium 22. orchestra pit 23. guest dressing room 24. women&#039;s locker room / WC 25. cloakroom 26. translator room 27. projection room 28. balcony"},{"url":"2/2/8/8/22880584/1848294.jpg","width":"333","height":"118","caption":"section 1. president&#039;s suite 2. permanent collection gallery 3. temporary exhibition gallery 4. museum book store / gift shop 5. passenger elevator 6. restroom storage"},{"url":"2/2/8/8/22880584/3348281.jpg","width":"333","height":"94","caption":"section 1. temporary collection gallery 2. museum lobby 3. courtyard 4. museum café 5. cloakroom 6. registration & art handling 7. restroom 8. AHU room 9. café kitchen 10. loading bay"},{"url":"2/2/8/8/22880584/7545014.jpg","width":"333","height":"153","caption":"section 1. permanent collection gallery 2. temporary exhibition gallery 3. security vestibule 4. museum lobby 5. president / VIP lobby 6. vestibule 7. storage 8. small temporary gallery / dark room 9. welcome gallery 10. cloakroom 11. registration + art handling 12. medical room 13. conference center lobby 14. organizer&#039;s office 15. meeting room lobby 16. men&#039;s shower / locker room 17. women&#039;s shower / locker room 18. fan room 19. AHU room 20. male restroom 21. female restroom 22. control room 23. admin offices 24. mezzanine café 25. service lobby 26. janitor room 27. meeting room 28. network room 29. disabled room"},{"url":"2/2/8/8/22880584/1623120.jpg","width":"250","height":"250","caption":"auditorium / ground floor plan 1. vestibules 2. main stage 3. multi-purpose auditorium 4. PA 5. restroom 6. cloakroom 7. storage 8. disabled restroom"},{"url":"2/2/8/8/22880584/898812.jpg","width":"250","height":"250","caption":"auditorium / first floor plan 1. storage 2. light control 3. projection room 4. sound control 5. balcony"},{"url":"2/2/8/8/22880584/3874837.jpg","width":"252","height":"250","caption":"auditorium / second floor plan 1. corridor 2. vestibules 3. balcony 4. storage 5. translator room"},{"url":"2/2/8/8/22880584/4612216.jpg","width":"251","height":"250","caption":"auditorium / third floor plan 1. corridor 2. vestibules 3. open to below 4. stage catwalk 5. catwalk 6. dimmer room 7. network room"},{"url":"2/2/8/8/22880584/3787234.jpg","width":"333","height":"164","caption":"auditorium section 1. network room 2. corridor 3. meeting room 4. female restroom 5. service kitchen 6. AHU room 7. main stage 8. multi-purpose auditorium 9. balcony"}]}) } jQuery ? jQuery(init) : document.observe('dom:loaded', init) })(window._W && _W.jQuery) </script>  <div style="height:20px;overflow:hidden"></div></div>
+
+		</div>
+	
+	
+			<div class="blog-social  ">
+		<div class="blog-social-item blog-fb-like"><fb:like href="http://UNSET/1/post/2013/11/heydar-aliyev-center-by-zaha-hadid-architects-baku-azerbaijan.html" width="90" layout="button_count" action="like" show_faces="false" share="false"></fb:like></div><div class="blog-social-item"><a class="twitter-share-button" href="http://twitter.com/share?url=http://UNSET/1/post/2013/11/heydar-aliyev-center-by-zaha-hadid-architects-baku-azerbaijan.html" data-text="Heydar Aliyev Center by Zaha Hadid Architects, Baku, Azerbaijan - M+ Architecture" data-count="horizontal"></a></div>
+		<div style="clear:both"></div>
+	</div>
+
+	
+		<div class="blog-comments-bottom">
+				<a href="http://UNSET/blog/heydar-aliyev-center-by-zaha-hadid-architects-baku-azerbaijan#comments" class="blog-link">
+		3 Comments
+	</a>
+
+		</div>
+	
+		<div class="blog-post-separator"></div>
+	</div>	<div id="blog-post-229474558422791398" class="blog-post">
+	
+	
+		<div class="blog-header">
+			<h2 class="blog-title">
+					<a class="blog-title-link blog-link" href="http://UNSET/blog/liquid-orchids">Liquid Orchids</a>
+
+			</h2>
+			<p class="blog-date">
+					<span class="date-text">
+		11/19/2013
+	</span>
+
+			</p>
+			<p class="blog-comments">
+					<a href="http://UNSET/blog/liquid-orchids#comments" class="blog-link">
+		0 Comments
+	</a>
+
+			</p>
+		</div>
+	
+		<div class="blog-separator">&nbsp;</div>
+	
+		<div class="blog-content">
+				<div class="paragraph" style="text-align:left;"><strong>F<span style="">abian Oefner unites gravity and paint to create liquid orchids</span></strong><br /><br /><span style=""></span> <span style="">For his latest series of paint action photography, Swiss artist <a title="" style="" href="http://fabianoefner.com/" target="_blank">Fabian Oefner</a>  has once again captured ephemeral beauty by uniting gravity and liquid  chroma to yield delicate and fragile &lsquo;orchid&rsquo; structures.</span> <br /><span>T</span>hrough the synthesis of natural forces and acrylic paint, blossom-like  arrangements emerge from the fluid matter. Filling a tank with several  layers of different tones &mdash; with the top coat being either black or  white &mdash; Oefner drops a sphere directly into the solution. <br /><span>A</span>s the  plunging object falls, the paint it splashes into is forced upwards,  shaping the blend of liquified hues into floral-like forms. when  photographed with high speed cameras, an image is permanently preserved,  capturing a moment that transpires for only a fraction of a second  before disappearing beneath the surface again. <br /></div>  <div><div class="wsite-image wsite-image-border-thin " style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:center"> <a> <img src="uploads/2/2/8/8/22880584/4148291_orig.jpg" alt="Picture" style="width:100%;max-width:711px" /> </a> <div style="display:block;font-size:90%"></div> </div></div>  <div class="paragraph" style="text-align:left;">Check it out on Designboom web site! <a target="_blank" href="http://www.designboom.com/art/fabian-oefner-unites-gravity-and-paint-to-create-liquid-orchids-11-07-2013/">Click here</a><br /></div>
+
+		</div>
+	
+	
+			<div class="blog-social  ">
+		<div class="blog-social-item blog-fb-like"><fb:like href="http://UNSET/1/post/2013/11/liquid-orchids.html" width="90" layout="button_count" action="like" show_faces="false" share="false"></fb:like></div><div class="blog-social-item"><a class="twitter-share-button" href="http://twitter.com/share?url=http://UNSET/1/post/2013/11/liquid-orchids.html" data-text="Liquid Orchids - M+ Architecture" data-count="horizontal"></a></div>
+		<div style="clear:both"></div>
+	</div>
+
+	
+		<div class="blog-comments-bottom">
+				<a href="http://UNSET/blog/liquid-orchids#comments" class="blog-link">
+		0 Comments
+	</a>
+
+		</div>
+	
+		<div class="blog-post-separator"></div>
+	</div>
+
+
+<!-- bid: $blog_id --></div>
+	</div>
+
+	    </td>
+	        <td class="blog-sidebar" valign="top">
+	            <div id="916106540640943969-sidebar" class="column-blog">
+	<div class="blog-sidebar-separator">
+		<ul id="916106540640943969-sidebar-list" class="columnlist-blog" style="margin:0; padding: 0;">
+			<h2 class="blog-author-title" style="text-align:left;">Author</h2>
+<p style="text-align:left;">Marco De Bortoli<br /></p>
+
+<h2 class="blog-archives-title" style="text-align:left;">Archives</h2>
+<p class="blog-archive-list">
+		<a href="blog/archives/07-2017" class="blog-link">July 2017</a>
+		<br />
+		<a href="blog/archives/12-2016" class="blog-link">December 2016</a>
+		<br />
+		<a href="blog/archives/10-2016" class="blog-link">October 2016</a>
+		<br />
+		<a href="blog/archives/01-2016" class="blog-link">January 2016</a>
+		<br />
+		<a href="blog/archives/04-2015" class="blog-link">April 2015</a>
+		<br />
+		<a href="blog/archives/02-2015" class="blog-link">February 2015</a>
+		<br />
+		<a href="blog/archives/11-2013" class="blog-link">November 2013</a>
+		<br />
+</p>
+
+<h2 class="blog-category-title" style="text-align:left;">Categories</h2>
+<p class="blog-category-list">
+	<a href="blog/category/all" class="blog-link">All</a>
+	<br />
+		<a href="blog/category/architecture" class="blog-link">Architecture</a>
+		<br />
+		<a href="blog/category/art" class="blog-link">Art</a>
+		<br />
+		<a href="blog/category/biophilic-design" class="blog-link">Biophilic Design</a>
+		<br />
+		<a href="blog/category/cadcam" class="blog-link">CAD/CAM</a>
+		<br />
+		<a href="blog/category/cafe" class="blog-link">Cafe'</a>
+		<br />
+		<a href="blog/category/opensource" class="blog-link">Opensource</a>
+		<br />
+		<a href="blog/category/paper" class="blog-link">Paper</a>
+		<br />
+		<a href="blog/category/photography" class="blog-link">Photography</a>
+		<br />
+		<a href="blog/category/retail" class="blog-link">Retail</a>
+		<br />
+		<a href="blog/category/social" class="blog-link">Social</a>
+		<br />
+		<a href="blog/category/social-housing" class="blog-link">Social Housing</a>
+		<br />
+</p>
+
+<p class="blog-feed-link">
+	<link href=""  rel="alternate" type="application/rss+xml" title="RSS" />
+	<a href="1/feed">
+		<img src="http://cdn2.editmysite.com/images/old/bg_feed.gif" />
+		RSS Feed
+	</a>
+</p>
+
+<div style="text-align:left;"><div style="height:10px;overflow:hidden"></div>
+<span class="wsite-social wsite-social-default"><a class='first-child wsite-social-item wsite-social-facebook' href='https://www.facebook.com/made.kriwil.7' target='_blank' alt-text='Facebook'><span class='wsite-social-item-inner'></span></a></span>
+<div style="height:10px;overflow:hidden"></div></div>
+		</ul>
+	</div>
+</div>
+
+	        </td>
+	</tr>
+</table>
+
+</div>
+
+        </div><!-- end container -->
+    </div><!-- end main-wrap -->
+
+    <div id="footer-wrap">
+        <div class="container">
+       		Create a <a target="_top" href="http://www.weebly.com/">free web site</a> with <a target="_top" href="http://www.weebly.com/" title="free web site">Weebly</a>
+        </div><!-- end container -->
+    </div><!-- end footer-wrap -->
+	
+
+		<body oncontextmenu="return false;"><div id="fb-root"></div>
+<script>
+	window.fbAsyncInit = function() {
+		FB.init({
+			appId : '190291501407',
+			xfbml : true,
+			version : 'v2.6'
+		});
+
+        // Set Facebook comment plugin's colorscheme based off of theme
+		var comments = document.getElementsByClassName('facebook-comment-widget'),
+			scheme = document.body.className.match('wsite-theme-light');
+
+		for (var i = 0; i < comments.length; i++) {
+			comments[i].setAttribute('colorscheme', scheme ? 'light' : 'dark');
+		}
+
+		var fbCommentCounts;
+
+		FB.Event.subscribe('xfbml.render', function(){
+			fbCommentCounts = jQuery('.fb_comments_count');
+			for (var i = 0; i < fbCommentCounts.length; i++) {
+				var commentText = (jQuery(fbCommentCounts[i]).text() == '1' ? "Comment" : "Comments");
+				jQuery(fbCommentCounts[i]).parent().siblings('.fb_comment_count_label').text(commentText);
+			}
+		});
+
+		var comment_callback = function(res) {
+			FB.XFBML.parse(); // Refresh comment counters on page
+		}
+
+		FB.Event.subscribe('comment.create', comment_callback);
+		FB.Event.subscribe('comment.remove', comment_callback);
+
+	};
+
+	(function(d, s, id){
+		var js, fjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(id)) {return;}
+		js = d.createElement(s); js.id = id;
+		js.src = "//connect.facebook.net/"+_W.facebookLocale+"/sdk.js";
+		fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));
+</script>
+<script type='text/javascript'>
+	(function() {
+		function j(src, id) {
+			var s = document.createElement('script');
+			s.type = 'text/javascript';
+			s.async = true;
+			s.src = src;
+			if(id) {s.id=id};
+			document.getElementsByTagName('head')[0].appendChild(s);
+		}
+		j('//platform.twi'+'tter.com/widgets.js');
+	})()
+</script>
+	</body>
+</html>
